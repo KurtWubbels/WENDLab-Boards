@@ -8,7 +8,7 @@
       "email" : "info@wend-lab.com",
       "platforms":
       [
-{
+	{
           "name": "wendlab",
           "architecture": "esp32",
           "version": "1.0",
@@ -88,9 +88,6 @@
             }
           ]
         }
-  ],
-      "tools":
-      [
       ]
     }
   ]
