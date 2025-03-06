@@ -14,8 +14,8 @@
           "version": "1.0",
           "url": "https://github.com/KurtWubbels/WENDLab-Boards/WENDLab-1.0.zip?raw=true",
           "archiveFileName": "WENDLab-1.0.zip",
-          "checksum": "SHA-256:ea936b1707d3d9f609f0c741066861bed14e35282491998c0a3f5908f02d7ea1",
-          "size": "19913255",
+          "checksum": "SHA-256:bb1b5ada4d96bcd49f17a7919eeb05c6f93b5de2a4254ed25a403f0719f0177e",
+          "size": "19913258",
           "boards": [
             {
               "name": "WENDLab 56mm Single"

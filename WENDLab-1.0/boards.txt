@@ -46,7 +46,7 @@ wendlab-st7701s.build.bootloader_addr=0x0
 wendlab-st7701s.build.target=esp32s3
 wendlab-st7701s.build.mcu=esp32s3
 wendlab-st7701s.build.core=esp32
-wendlab-st7701s.build.variant=esp32s3
+wendlab-st7701s.build.variant=wendlab-st7701s
 wendlab-st7701s.build.board=WENDLAB_56mm
 
 wendlab-st7701s.build.usb_mode=1
