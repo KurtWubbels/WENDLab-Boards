@@ -2,24 +2,20 @@
   "packages":
   [
     {
-      "name": "WENDLab",
+      "name": "wendlab",
       "maintainer": "WENDLab LLC",
       "websiteURL": "https://wend-lab.com",
       "email" : "info@wend-lab.com",
       "platforms":
       [
 	{
-          "name": "wendlab",
+          "name": "WENDLab Boards",
           "architecture": "esp32",
           "version": "1.0",
-          "category": "ESP32",
           "url": "https://github.com/KurtWubbels/WENDLab-Boards/WENDLab-1.0.zip?raw=true",
           "archiveFileName": "WENDLab-1.0.zip",
           "checksum": "SHA-256:ea936b1707d3d9f609f0c741066861bed14e35282491998c0a3f5908f02d7ea1",
           "size": "19913255",
-          "help": {
-            "online": ""
-          },
           "boards": [
             {
               "name": "WENDLab 56mm Single"
