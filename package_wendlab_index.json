@@ -11,9 +11,9 @@
 	{
           "name": "WENDLab Boards",
           "architecture": "esp32",
-          "version": "1.0",
-          "url": "https://github.com/KurtWubbels/WENDLab-Boards/WENDLab-1.0.zip?raw=true",
-          "archiveFileName": "WENDLab-1.0.zip",
+          "version": "1.01",
+          "url": "https://github.com/KurtWubbels/WENDLab-Boards/WENDLab-1.01.zip?raw=true",
+          "archiveFileName": "WENDLab-1.01.zip",
           "checksum": "SHA-256:bb1b5ada4d96bcd49f17a7919eeb05c6f93b5de2a4254ed25a403f0719f0177e",
           "size": "19913258",
           "boards": [
