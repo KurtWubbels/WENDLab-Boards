@@ -17,6 +17,7 @@ static const uint8_t MOSI = 40;
 static const uint8_t SCK = 39;
 static const uint8_t MISO = 41;
 static const uint8_t CS = 6;
+static const uint8_t SS = -1;
 
 static const uint8_t TFT_MISO = 41; 	// TFT Input
 static const uint8_t TFT_MOSI = 40; 	// TFT Output
