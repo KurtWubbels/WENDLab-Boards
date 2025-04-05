@@ -195,3 +195,153 @@ wendlab-st7701s.menu.EraseFlash.all.upload.erase_cmd=-e
 # wendlab-st7701s.menu.ZigbeeMode.zczr.build.zigbee_libs=-lesp_zb_api_zczr -lesp_zb_cli_command -lzboss_stack.zczr -lzboss_port
 
 ##############################################################
+
+wendlab-gc9a01.name=WENDLab GC9A01 Triple
+
+wendlab-gc9a01.bootloader.tool=esptool_py
+wendlab-gc9a01.bootloader.tool.default=esptool_py
+
+wendlab-gc9a01.upload.tool=esptool_py
+wendlab-gc9a01.upload.tool.default=esptool_py
+wendlab-gc9a01.upload.tool.network=esp_ota
+
+wendlab-gc9a01.upload.maximum_size=1310720
+wendlab-gc9a01.upload.maximum_data_size=327680
+wendlab-gc9a01.upload.flags=
+wendlab-gc9a01.upload.extra_flags=
+wendlab-gc9a01.upload.use_1200bps_touch=false
+wendlab-gc9a01.upload.wait_for_upload_port=false
+
+wendlab-gc9a01.serial.disableDTR=false
+wendlab-gc9a01.serial.disableRTS=false
+
+wendlab-gc9a01.build.tarch=xtensa
+wendlab-gc9a01.build.bootloader_addr=0x0
+wendlab-gc9a01.build.target=esp32s3
+wendlab-gc9a01.build.mcu=esp32s3
+wendlab-gc9a01.build.core=esp32
+wendlab-gc9a01.build.variant=wendlab-gc9a01
+wendlab-gc9a01.build.board=WENDLAB_GC9A01_TRIPLE
+
+wendlab-gc9a01.build.usb_mode=1
+wendlab-gc9a01.build.cdc_on_boot=1
+wendlab-gc9a01.build.msc_on_boot=0
+wendlab-gc9a01.build.dfu_on_boot=0
+wendlab-gc9a01.build.f_cpu=240000000L
+wendlab-gc9a01.build.flash_size=16MB
+wendlab-gc9a01.build.flash_freq=80m
+wendlab-gc9a01.build.flash_mode=dio
+wendlab-gc9a01.build.boot=qio
+wendlab-gc9a01.build.boot_freq=80m
+wendlab-gc9a01.build.partitions=default
+wendlab-gc9a01.build.defines=
+wendlab-gc9a01.build.loop_core=1
+wendlab-gc9a01.build.event_core=0
+wendlab-gc9a01.build.psram_type=opi
+wendlab-gc9a01.build.memory_type={build.boot}_{build.psram_type}
+
+## IDE 2.0 Seems to not update the value
+wendlab-gc9a01.menu.JTAGAdapter.default=Disabled
+wendlab-gc9a01.menu.JTAGAdapter.default.build.copy_jtag_files=0
+wendlab-gc9a01.menu.JTAGAdapter.builtin=Integrated USB JTAG
+wendlab-gc9a01.menu.JTAGAdapter.builtin.build.openocdscript=esp32s3-builtin.cfg
+wendlab-gc9a01.menu.JTAGAdapter.builtin.build.copy_jtag_files=1
+wendlab-gc9a01.menu.JTAGAdapter.external=FTDI Adapter
+wendlab-gc9a01.menu.JTAGAdapter.external.build.openocdscript=esp32s3-ftdi.cfg
+wendlab-gc9a01.menu.JTAGAdapter.external.build.copy_jtag_files=1
+wendlab-gc9a01.menu.JTAGAdapter.bridge=ESP USB Bridge
+wendlab-gc9a01.menu.JTAGAdapter.bridge.build.openocdscript=esp32s3-bridge.cfg
+wendlab-gc9a01.menu.JTAGAdapter.bridge.build.copy_jtag_files=1
+
+wendlab-gc9a01.menu.PSRAM.disabled=Disabled
+wendlab-gc9a01.menu.PSRAM.disabled.build.defines=
+wendlab-gc9a01.menu.PSRAM.disabled.build.psram_type=qspi
+wendlab-gc9a01.menu.PSRAM.opi=OPI PSRAM
+wendlab-gc9a01.menu.PSRAM.opi.build.defines=-DBOARD_HAS_PSRAM
+wendlab-gc9a01.menu.PSRAM.opi.build.psram_type=opi
+
+wendlab-gc9a01.menu.FlashMode.qio=QIO 80MHz
+wendlab-gc9a01.menu.FlashMode.qio.build.flash_mode=dio
+wendlab-gc9a01.menu.FlashMode.qio.build.boot=qio
+wendlab-gc9a01.menu.FlashMode.qio.build.boot_freq=80m
+wendlab-gc9a01.menu.FlashMode.qio.build.flash_freq=80m
+wendlab-gc9a01.menu.FlashMode.qio120=QIO 120MHz
+wendlab-gc9a01.menu.FlashMode.qio120.build.flash_mode=dio
+wendlab-gc9a01.menu.FlashMode.qio120.build.boot=qio
+wendlab-gc9a01.menu.FlashMode.qio120.build.boot_freq=120m
+wendlab-gc9a01.menu.FlashMode.qio120.build.flash_freq=80m
+wendlab-gc9a01.menu.FlashMode.dio=DIO 80MHz
+wendlab-gc9a01.menu.FlashMode.dio.build.flash_mode=dio
+wendlab-gc9a01.menu.FlashMode.dio.build.boot=dio
+wendlab-gc9a01.menu.FlashMode.dio.build.boot_freq=80m
+wendlab-gc9a01.menu.FlashMode.dio.build.flash_freq=80m
+wendlab-gc9a01.menu.FlashMode.opi=OPI 80MHz
+wendlab-gc9a01.menu.FlashMode.opi.build.flash_mode=dout
+wendlab-gc9a01.menu.FlashMode.opi.build.boot=opi
+wendlab-gc9a01.menu.FlashMode.opi.build.boot_freq=80m
+wendlab-gc9a01.menu.FlashMode.opi.build.flash_freq=80m
+
+wendlab-gc9a01.menu.FlashSize.8M=8MB (64Mb)
+wendlab-gc9a01.menu.FlashSize.8M.build.flash_size=8MB
+wendlab-gc9a01.menu.FlashSize.16M=16MB (128Mb)
+wendlab-gc9a01.menu.FlashSize.16M.build.flash_size=16MB
+
+wendlab-gc9a01.menu.LoopCore.1=Core 1
+wendlab-gc9a01.menu.LoopCore.1.build.loop_core=-DARDUINO_RUNNING_CORE=1
+wendlab-gc9a01.menu.LoopCore.0=Core 0
+wendlab-gc9a01.menu.LoopCore.0.build.loop_core=-DARDUINO_RUNNING_CORE=0
+
+wendlab-gc9a01.menu.EventsCore.1=Core 1
+wendlab-gc9a01.menu.EventsCore.1.build.event_core=-DARDUINO_EVENT_RUNNING_CORE=1
+wendlab-gc9a01.menu.EventsCore.0=Core 0
+wendlab-gc9a01.menu.EventsCore.0.build.event_core=-DARDUINO_EVENT_RUNNING_CORE=0
+
+wendlab-gc9a01.menu.USBMode.hwcdc=Hardware CDC and JTAG
+wendlab-gc9a01.menu.USBMode.hwcdc.build.usb_mode=1
+
+wendlab-gc9a01.menu.CDCOnBoot.default=Disabled
+wendlab-gc9a01.menu.CDCOnBoot.default.build.cdc_on_boot=0
+wendlab-gc9a01.menu.CDCOnBoot.cdc=Enabled
+wendlab-gc9a01.menu.CDCOnBoot.cdc.build.cdc_on_boot=1
+
+wendlab-gc9a01.menu.PartitionScheme.default_8MB=8M with spiffs (3MB APP/1.5MB SPIFFS)
+wendlab-gc9a01.menu.PartitionScheme.default_8MB.build.partitions=default_8MB
+wendlab-gc9a01.menu.PartitionScheme.default_8MB.upload.maximum_size=3342336
+
+wendlab-gc9a01.menu.CPUFreq.240=240MHz (WiFi)
+wendlab-gc9a01.menu.CPUFreq.240.build.f_cpu=240000000L
+
+wendlab-gc9a01.menu.UploadSpeed.921600=921600
+wendlab-gc9a01.menu.UploadSpeed.921600.upload.speed=921600
+wendlab-gc9a01.menu.UploadSpeed.115200=115200
+wendlab-gc9a01.menu.UploadSpeed.115200.upload.speed=115200
+wendlab-gc9a01.menu.UploadSpeed.256000.windows=256000
+wendlab-gc9a01.menu.UploadSpeed.256000.upload.speed=256000
+wendlab-gc9a01.menu.UploadSpeed.230400.windows.upload.speed=256000
+wendlab-gc9a01.menu.UploadSpeed.230400=230400
+wendlab-gc9a01.menu.UploadSpeed.230400.upload.speed=230400
+wendlab-gc9a01.menu.UploadSpeed.460800.linux=460800
+wendlab-gc9a01.menu.UploadSpeed.460800.macosx=460800
+wendlab-gc9a01.menu.UploadSpeed.460800.upload.speed=460800
+wendlab-gc9a01.menu.UploadSpeed.512000.windows=512000
+wendlab-gc9a01.menu.UploadSpeed.512000.upload.speed=512000
+
+wendlab-gc9a01.menu.DebugLevel.none=None
+wendlab-gc9a01.menu.DebugLevel.none.build.code_debug=0
+wendlab-gc9a01.menu.DebugLevel.error=Error
+wendlab-gc9a01.menu.DebugLevel.error.build.code_debug=1
+wendlab-gc9a01.menu.DebugLevel.warn=Warn
+wendlab-gc9a01.menu.DebugLevel.warn.build.code_debug=2
+wendlab-gc9a01.menu.DebugLevel.info=Info
+wendlab-gc9a01.menu.DebugLevel.info.build.code_debug=3
+wendlab-gc9a01.menu.DebugLevel.debug=Debug
+wendlab-gc9a01.menu.DebugLevel.debug.build.code_debug=4
+wendlab-gc9a01.menu.DebugLevel.verbose=Verbose
+wendlab-gc9a01.menu.DebugLevel.verbose.build.code_debug=5
+
+wendlab-gc9a01.menu.EraseFlash.none=Disabled
+wendlab-gc9a01.menu.EraseFlash.none.upload.erase_cmd=
+wendlab-gc9a01.menu.EraseFlash.all=Enabled
+wendlab-gc9a01.menu.EraseFlash.all.upload.erase_cmd=-e
+
+##############################################################

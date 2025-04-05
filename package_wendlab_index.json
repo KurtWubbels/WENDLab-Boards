@@ -11,14 +11,17 @@
 	{
           "name": "WENDLab Boards",
           "architecture": "esp32",
-          "version": "1.01",
-          "url": "https://github.com/KurtWubbels/WENDLab-Boards/WENDLab-1.01.zip?raw=true",
-          "archiveFileName": "WENDLab-1.01.zip",
-          "checksum": "SHA-256:17ff15a29943c21a9b6cd3e728a110817def5b0360deee818258408604246afc",
-          "size": "19955370",
+          "version": "1.02",
+          "url": "https://github.com/KurtWubbels/WENDLab-Boards/WENDLab-1.02.zip?raw=true",
+          "archiveFileName": "WENDLab-1.02.zip",
+          "checksum": "SHA-256:d240f2b0b8aa51d04547d8f73b8e2b9775340f265fe6d789f699d63071af1cc3",
+          "size": "19960104",
           "boards": [
             {
               "name": "WENDLab 56mm Single"
+            },
+            {
+              "name": "WENDLab GC9A01 Triple"
             }
           ],
           "toolsDependencies": [
